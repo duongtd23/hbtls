@@ -1,0 +1,18 @@
+load hb-tls12-v17.cafe .
+
+ipsgopen INV .
+  -- inv inv2(S:Sys, KP:PqKey) .
+  -- inv inv3(S:Sys, KP:PqKey) .
+  -- inv inv9(S:Sys, A:Prin, B:Prin, A2:Prin, B2:Prin, I:Sid,
+    -- KC:ClassicKey, PK':PqPubKeyEn, K':PqPriKeyEn, SD1:Seed, N:Nat) .
+  generate inv9(S:Sys, A:Prin, B:Prin, A2:Prin, B2:Prin, I:Sid,
+    KC:ClassicKey, PK':PqPubKeyEn, K':PqPriKeyEn, SD1:Seed, N:Nat)
+  induction on S:Sys .
+close
+
+set-output gen9.cafe .
+:save-proof .
+
+eof
+
+load input9.cafe .

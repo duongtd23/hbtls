@@ -1,0 +1,16 @@
+load hb-tls12-v18.cafe .
+
+ipsgopen INV .
+  inv inv16(S:Sys,A:Prin,B:Prin,K:ClPriKeyEx,K':PqPriKeyEn,N:Nat) .
+  inv inv18(S:Sys, KP:PqKey) .
+  generate inv16(S:Sys,A:Prin,B:Prin,K:ClPriKeyEx,K':PqPriKeyEn,N:Nat)
+    induction on S:Sys .
+  generate inv18(S:Sys, KP:PqKey) induction on S:Sys .
+close
+
+set-output gen16+18.cafe .
+:save-proof .
+
+eof
+
+load input16+18.cafe .

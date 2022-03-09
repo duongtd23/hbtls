@@ -1,0 +1,87 @@
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = true .
+	red inv1(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = true .
+  red inv1(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = false .
+  eq existCPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = true .
+  red inv3(s,pmsPqKey(getPms(getMs(hsk)))) implies inv1(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = false .
+  eq existCPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = false .
+  eq existSPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = true .
+  red inv4(s,pmsPqKey(getPms(getMs(hsk)))) implies inv1(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = false .
+  eq existCPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = false .
+  eq existSPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = false .
+  red inv1(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = true .
+	red inv2(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = true .
+  red inv2(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = false .
+  eq client(pmsPqKey(getPms(getMs(hsk)))) = intruder .
+  red inv2(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = false .
+  eq (client(pmsPqKey(getPms(getMs(hsk)))) = intruder) = false .
+  eq existSPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = true .
+  red inv4(s,pmsPqKey(getPms(getMs(hsk)))) implies inv2(s,hsk) .
+close
+
+open INV .
+  op hsk : -> Key .
+	op s : -> Sys .
+  eq hsk \in hskLeaked(s) = false .
+	eq pqKeyPri(pmsPqKey(getPms(getMs(hsk)))) \in pqkLeaked(s) = false .
+  eq (client(pmsPqKey(getPms(getMs(hsk)))) = intruder) = false .
+  eq existSPqPriKexM(pmsPqKey(getPms(getMs(hsk))), nw(s)) = false .
+  red inv3(s,pmsPqKey(getPms(getMs(hsk)))) implies inv2(s,hsk) .
+close
