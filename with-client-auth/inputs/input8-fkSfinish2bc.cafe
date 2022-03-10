@@ -1,0 +1,18 @@
+load hb-tls12-ca.cafe .
+
+ipsgopen INV .
+  inv inv3(S:Sys, KP:PqKey) .
+  inv inv4(S:Sys, KP:PqKey) .
+  inv inv8(S:Sys, A:Prin, B:Prin, 
+    KC:ClassicKey, PK':PqPubKeyEn, K':PqPriKeyEn, SD1:Seed, SD2:Seed, H:Hash, N:Nat) .
+  generate inv8(S:Sys, A:Prin, B:Prin,
+    KC:ClassicKey, PK':PqPubKeyEn, K':PqPriKeyEn, SD1:Seed, SD2:Seed, H:Hash, N:Nat) 
+  induction on S:Sys only fkSfinish2b fkSfinish2c .
+close
+
+set-output gen8-fkSfinish2bc.cafe .
+:save-proof .
+
+eof
+
+load input8-fkSfinish2bc.cafe .

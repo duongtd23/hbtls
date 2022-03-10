@@ -70202,5 +70202,3 @@ open INV .
 	eq (clKeyPri(pmsClKey(r8)) \in clkLeaked(s)) = false .
 	red inv8(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv8(fkSfinish2c(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
-
---> Time taken is 81563ms

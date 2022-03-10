@@ -1,0 +1,16 @@
+load hb-tls12-noca.cafe .
+
+ipsgopen INV .
+  inv inv9(S:Sys, A:Prin, B:Prin, A2:Prin, B2:Prin, I:Sid,
+    KC:ClassicKey, PK':PqPubKeyEn, K':PqPriKeyEn, SD1:Seed, N:Nat) .
+  generate inv8(S:Sys, A:Prin, B:Prin,
+    KC:ClassicKey, PK':PqPubKeyEn, K':PqPriKeyEn, SD1:Seed, SD2:Seed, H:Hash, N:Nat) 
+  induction on S:Sys exclude fkSfinish2b fkSfinish2c .
+close
+
+set-output gen8-others.cafe .
+:save-proof .
+
+eof
+
+load input8-others.cafe .

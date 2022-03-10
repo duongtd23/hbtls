@@ -35,6 +35,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -52,9 +53,9 @@ open INV .
 	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
 	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
 	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
-	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1)) \in nw(s)) = true .
+	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1), r21) \in nw(s)) = true .
 	eq sign(r12) = sign(ca, owner(r12), pubKey(r12)) .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -79,6 +80,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -96,9 +98,9 @@ open INV .
 	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
 	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
 	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
-	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1)) \in nw(s)) = true .
+	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1), r21) \in nw(s)) = true .
 	eq (sign(r12) = sign(ca, owner(r12), pubKey(r12))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -123,6 +125,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -140,8 +143,8 @@ open INV .
 	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
 	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
 	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
-	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1)) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1), r21) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -166,6 +169,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -183,7 +187,7 @@ open INV .
 	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
 	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
 	eq (decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -208,6 +212,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -224,7 +229,7 @@ open INV .
 	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
 	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
 	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -249,6 +254,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -264,7 +270,7 @@ open INV .
 	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
 	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
 	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -289,6 +295,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -303,7 +310,7 @@ open INV .
 	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
 	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
 	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -328,6 +335,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -341,7 +349,7 @@ open INV .
 	eq decAsym?(r16, pubKey(r2)) = true .
 	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
 	eq (scertM(r11, r2, r1, r12) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -366,6 +374,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -378,7 +387,7 @@ open INV .
 	op sd2 : -> Seed .
 	eq decAsym?(r16, pubKey(r2)) = true .
 	eq (shDnM(r18, r2, r1) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -403,6 +412,7 @@ open INV .
 	op r19 : -> ClPriKeyEx .
 	op r2 : -> Prin .
 	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
 	op r3 : -> Version .
 	op r4 : -> Rand .
 	op r5 : -> CipherSuites .
@@ -414,7 +424,7 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq decAsym?(r16, pubKey(r2)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -427,457 +437,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
-	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
-	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
-	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
-	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1)) \in nw(s)) = true .
-	eq sign(r12) = sign(ca, owner(r12), pubKey(r12)) .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
-	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
-	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
-	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
-	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1)) \in nw(s)) = true .
-	eq (sign(r12) = sign(ca, owner(r12), pubKey(r12))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
-	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
-	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
-	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
-	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1)) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
-	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
-	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
-	eq (decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
-	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
-	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
-	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
-	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
-	eq (scertM(r11, r2, r1, r12) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
-	eq (shDnM(r18, r2, r1) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = true .
-	eq (ccsM(r1, r1, r2) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Sid .
-	op r11 : -> Prin .
-	op r12 : -> Cert .
-	op r13 : -> Prin .
-	op r14 : -> ClPubKeyEx .
-	op r15 : -> PqPubKeyEn .
-	op r16 : -> Cipher .
-	op r17 : -> Nat .
-	op r18 : -> Prin .
-	op r19 : -> ClPriKeyEx .
-	op r2 : -> Prin .
-	op r20 : -> PqPriKeyEn .
-	op r3 : -> Version .
-	op r4 : -> Rand .
-	op r5 : -> CipherSuites .
-	op r6 : -> PqKemParams .
-	op r7 : -> Prin .
-	op r8 : -> Rand .
-	op r9 : -> CipherSuite .
-	op s : -> Sys .
-	op sd1 : -> Seed .
-	op sd2 : -> Seed .
-	eq decAsym?(r16, pubKey(r2)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, kc, pk', k', sd1, sd2, h, n) .
-close
-
---> true 
-open INV .
-	op a : -> Prin .
-	op b : -> Prin .
-	op h : -> Hash .
-	op k' : -> PqPriKeyEn .
-	op kc : -> ClassicKey .
-	op n : -> Nat .
-	op pk' : -> PqPubKeyEn .
-	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -890,7 +451,7 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq ss(s, r1, r2, r5) = none .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -903,7 +464,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -916,12 +478,13 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r1, r2, r5) = none) = false .
-	eq (sf2M(r9, r2, r1, r10) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
 	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
 	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = true .
-	eq decSym?(r10, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = true .
-	eq decFin(r10, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = prf-sfin2(ms(ss(s, r1, r2, r5)), hAbbrHs(r1, r2, r3, r4, r5, r6, r8, cs(ss(s, r1, r2, r5)))) .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decSym?(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = true .
+	eq decFin(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = prf-sfin2(ms(ss(s, r1, r2, r5)), hAbbrHs(r1, r2, r3, r4, r5, r6, r8, cs(ss(s, r1, r2, r5)))) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -934,7 +497,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -947,12 +511,13 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r1, r2, r5) = none) = false .
-	eq (sf2M(r9, r2, r1, r10) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
 	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
 	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = true .
-	eq decSym?(r10, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = true .
-	eq (decFin(r10, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = prf-sfin2(ms(ss(s, r1, r2, r5)), hAbbrHs(r1, r2, r3, r4, r5, r6, r8, cs(ss(s, r1, r2, r5))))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decSym?(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = true .
+	eq (decFin(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = prf-sfin2(ms(ss(s, r1, r2, r5)), hAbbrHs(r1, r2, r3, r4, r5, r6, r8, cs(ss(s, r1, r2, r5))))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -965,7 +530,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -978,11 +544,12 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r1, r2, r5) = none) = false .
-	eq (sf2M(r9, r2, r1, r10) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
 	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
 	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = true .
-	eq decSym?(r10, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decSym?(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -995,7 +562,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -1008,10 +576,11 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r1, r2, r5) = none) = false .
-	eq (sf2M(r9, r2, r1, r10) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
 	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
 	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -1024,7 +593,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -1037,9 +607,10 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r1, r2, r5) = none) = false .
-	eq (sf2M(r9, r2, r1, r10) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
 	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -1052,7 +623,8 @@ open INV .
 	op n : -> Nat .
 	op pk' : -> PqPubKeyEn .
 	op r1 : -> Prin .
-	op r10 : -> Cipher .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Version .
 	op r4 : -> Rand .
@@ -1065,8 +637,776 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r1, r2, r5) = none) = false .
-	eq (sf2M(r9, r2, r1, r10) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
+	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
+	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
+	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1), r21) \in nw(s)) = true .
+	eq sign(r12) = sign(ca, owner(r12), pubKey(r12)) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
+	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
+	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
+	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1), r21) \in nw(s)) = true .
+	eq (sign(r12) = sign(ca, owner(r12), pubKey(r12))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
+	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
+	eq decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15) .
+	eq (ckexM(r1, r1, r2, clPubKeyEx(r19, r1), pqPubKeyEn(r20, r1), r21) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
+	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = true .
+	eq (decH(r16, pubKey(r2)) = hParams(r4, r8, r14, r15)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = true .
+	eq (skexM(r13, r2, r1, r14, r15, r16, r17) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (shM(r7, r2, r1, r3, r8, r9, r10) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = true .
+	eq (chM(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = true .
+	eq (scertM(r11, r2, r1, r12) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (shDnM(r18, r2, r1) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = true .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Sid .
+	op r11 : -> Prin .
+	op r12 : -> Cert .
+	op r13 : -> Prin .
+	op r14 : -> ClPubKeyEx .
+	op r15 : -> PqPubKeyEn .
+	op r16 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> ClPriKeyEx .
+	op r2 : -> Prin .
+	op r20 : -> PqPriKeyEn .
+	op r21 : -> Nat .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> CipherSuites .
+	op r6 : -> PqKemParams .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> CipherSuite .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq decAsym?(r16, pubKey(r2)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq ss(s, r1, r2, r5) = none .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
+	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = true .
+	eq decSym?(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = true .
+	eq decFin(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = prf-sfin2(ms(ss(s, r1, r2, r5)), hAbbrHs(r1, r2, r3, r4, r5, r6, r8, cs(ss(s, r1, r2, r5)))) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
+	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = true .
+	eq decSym?(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = true .
+	eq (decFin(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = prf-sfin2(ms(ss(s, r1, r2, r5)), hAbbrHs(r1, r2, r3, r4, r5, r6, r8, cs(ss(s, r1, r2, r5))))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
+	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = true .
+	eq decSym?(r11, prf-skey(ms(ss(s, r1, r2, r5)), seedHs(r4, r8))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
+	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	eq (sh2M(r7, r2, r1, r3, r8, r5, cs(ss(s, r1, r2, r5))) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = true .
+	eq (ch2M(r1, r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = true .
+	eq (sf2M(r10, r2, r1, r11) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = true .
+	eq (ccsM(r9, r2, r1) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r10 : -> Prin .
+	op r11 : -> Cipher .
+	op r2 : -> Prin .
+	op r3 : -> Version .
+	op r4 : -> Rand .
+	op r5 : -> Sid .
+	op r6 : -> CipherSuites .
+	op r7 : -> Prin .
+	op r8 : -> Rand .
+	op r9 : -> Prin .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r1, r2, r5) = none) = false .
+	eq (ccsM(r1, r1, r2) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(cfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -12867,11 +13207,12 @@ open INV .
 	op r3 : -> Prin .
 	op r4 : -> ClPubKeyEx .
 	op r5 : -> PqPubKeyEn .
+	op r6 : -> Nat .
 	op s : -> Sys .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
-	eq (ckexM(r1, r2, r3, r4, r5) \in nw(s)) = true .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE3(s, r1, r2, r3, r4, r5), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (ckexM(r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE3(s, r1, r2, r3, r4, r5, r6), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -12888,11 +13229,12 @@ open INV .
 	op r3 : -> Prin .
 	op r4 : -> ClPubKeyEx .
 	op r5 : -> PqPubKeyEn .
+	op r6 : -> Nat .
 	op s : -> Sys .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
-	eq (ckexM(r1, r2, r3, r4, r5) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE3(s, r1, r2, r3, r4, r5), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (ckexM(r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE3(s, r1, r2, r3, r4, r5, r6), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -12909,11 +13251,12 @@ open INV .
 	op r3 : -> Prin .
 	op r4 : -> ClPubKeyEx .
 	op r5 : -> PqPubKeyEn .
+	op r6 : -> Nat .
 	op s : -> Sys .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
-	eq (ckexM(r1, r2, r3, r4, r5) \in nw(s)) = true .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE4(s, r1, r2, r3, r4, r5), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (ckexM(r1, r2, r3, r4, r5, r6) \in nw(s)) = true .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE4(s, r1, r2, r3, r4, r5, r6), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -12930,11 +13273,12 @@ open INV .
 	op r3 : -> Prin .
 	op r4 : -> ClPubKeyEx .
 	op r5 : -> PqPubKeyEn .
+	op r6 : -> Nat .
 	op s : -> Sys .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
-	eq (ckexM(r1, r2, r3, r4, r5) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE4(s, r1, r2, r3, r4, r5), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (ckexM(r1, r2, r3, r4, r5, r6) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(leakPKE4(s, r1, r2, r3, r4, r5, r6), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -12954,8 +13298,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -12968,15 +13313,15 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
 	eq (skexM(r3, r3, r2, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r13) \in nw(s)) = true .
-	eq decFin(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16)) .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decFin(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16)) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -12996,8 +13341,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13010,15 +13356,15 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
 	eq (skexM(r3, r3, r2, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r13) \in nw(s)) = true .
-	eq (decFin(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (decFin(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13038,8 +13384,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13052,14 +13399,14 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
 	eq (skexM(r3, r3, r2, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r13) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13079,8 +13426,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13093,13 +13441,13 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13119,8 +13467,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13133,12 +13482,12 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13158,8 +13507,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13172,11 +13522,11 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13196,8 +13546,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13210,10 +13561,10 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13233,8 +13584,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13247,9 +13599,9 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13269,8 +13621,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13283,8 +13636,8 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13304,8 +13657,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13318,7 +13672,108 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r2 : -> Prin .
+	op r3 : -> Prin .
+	op r4 : -> Version .
+	op r5 : -> Rand .
+	op r6 : -> Sid .
+	op r7 : -> CipherSuites .
+	op r8 : -> Rand .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq ss(s, r2, r3, r6) = none .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r2 : -> Prin .
+	op r3 : -> Prin .
+	op r4 : -> Version .
+	op r5 : -> Rand .
+	op r6 : -> Sid .
+	op r7 : -> CipherSuites .
+	op r8 : -> Rand .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ch2M(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
+	eq (sh2M(r3, r3, r2, r4, r8, r6, cs(ss(s, r2, r3, r6))) \in nw(s)) = true .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r2 : -> Prin .
+	op r3 : -> Prin .
+	op r4 : -> Version .
+	op r5 : -> Rand .
+	op r6 : -> Sid .
+	op r7 : -> CipherSuites .
+	op r8 : -> Rand .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ch2M(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
+	eq (sh2M(r3, r3, r2, r4, r8, r6, cs(ss(s, r2, r3, r6))) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r2 : -> Prin .
+	op r3 : -> Prin .
+	op r4 : -> Version .
+	op r5 : -> Rand .
+	op r6 : -> Sid .
+	op r7 : -> CipherSuites .
+	op r8 : -> Rand .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ch2M(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sChangeCS2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13418,8 +13873,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13433,15 +13889,15 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
 	eq (skexM(r3, r3, r2, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r13) \in nw(s)) = true .
-	eq decFin(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16)) .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decFin(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16)) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13461,8 +13917,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13476,15 +13933,15 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
 	eq (skexM(r3, r3, r2, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r13) \in nw(s)) = true .
-	eq (decFin(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (decFin(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = prf-cfin(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), hFullHs(r2, r3, r4, r5, r6, r7, r8, r9, r10, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3))), clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r15, r16))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13504,8 +13961,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13519,14 +13977,14 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = true .
 	eq (skexM(r3, r3, r2, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3), encH(priKey(r3), hParams(r5, r8, clPubKeyEx(r11, r3), pqPubKeyEn(r12, r3))), r13) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13546,8 +14004,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13561,13 +14020,13 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = true .
-	eq decSym?(r18, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, time(s))), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq decSym?(r19, prf-ckey(prf-ms(pms(classicKey(r15, r11, r2, r3), pqKey(r16, r12, r2, r3, r13)), seedMs(r5, r8, r15, r16)), seedHs(r5, r8))) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13587,8 +14046,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13602,12 +14062,12 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = true .
 	eq (scertM(r3, r3, r2, cert(r3, pubKey(r3), sign(ca, r3, pubKey(r3)))) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13627,8 +14087,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13642,11 +14103,11 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (shM(r3, r3, r2, r4, r8, r9, r10) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13666,8 +14127,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13681,10 +14143,10 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = true .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = true .
 	eq (chM(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13704,8 +14166,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13719,9 +14182,9 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = true .
-	eq (ckexM(r14, r2, r3, r15, r16) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = true .
+	eq (ckexM(r14, r2, r3, r15, r16, r17) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13741,8 +14204,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13756,8 +14220,8 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = true .
-	eq (cfM(r17, r2, r3, r18) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	eq (cfM(r18, r2, r3, r19) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13777,8 +14241,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13792,7 +14257,7 @@ open INV .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (shDnM(r3, r3, r2) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13812,8 +14277,9 @@ open INV .
 	op r14 : -> Prin .
 	op r15 : -> ClPubKeyEx .
 	op r16 : -> PqPubKeyEn .
-	op r17 : -> Prin .
-	op r18 : -> Cipher .
+	op r17 : -> Nat .
+	op r18 : -> Prin .
+	op r19 : -> Cipher .
 	op r2 : -> Prin .
 	op r3 : -> Prin .
 	op r4 : -> Version .
@@ -13826,7 +14292,7 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ccsM(r3, r3, r2) \in nw(s)) = false .
-	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18), a, b, kc, pk', k', sd1, sd2, h, n) .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -13874,6 +14340,7 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (ch2M(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (sh2M(r3, r3, r2, r4, r8, r6, cs(ss(s, r2, r3, r6))) \in nw(s)) = true .
 	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
@@ -13900,6 +14367,7 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (ch2M(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = true .
 	eq (sh2M(r3, r3, r2, r4, r8, r6, cs(ss(s, r2, r3, r6))) \in nw(s)) = false .
 	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
@@ -13926,7 +14394,33 @@ open INV .
 	op sd1 : -> Seed .
 	op sd2 : -> Seed .
 	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ccsM(r3, r3, r2) \in nw(s)) = true .
 	eq (ch2M(r1, r2, r3, r4, r5, r6, r7) \in nw(s)) = false .
+	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
+close
+
+--> true 
+open INV .
+	op a : -> Prin .
+	op b : -> Prin .
+	op h : -> Hash .
+	op k' : -> PqPriKeyEn .
+	op kc : -> ClassicKey .
+	op n : -> Nat .
+	op pk' : -> PqPubKeyEn .
+	op r1 : -> Prin .
+	op r2 : -> Prin .
+	op r3 : -> Prin .
+	op r4 : -> Version .
+	op r5 : -> Rand .
+	op r6 : -> Sid .
+	op r7 : -> CipherSuites .
+	op r8 : -> Rand .
+	op s : -> Sys .
+	op sd1 : -> Seed .
+	op sd2 : -> Seed .
+	eq (ss(s, r2, r3, r6) = none) = false .
+	eq (ccsM(r3, r3, r2) \in nw(s)) = false .
 	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(sfinish2(s, r1, r2, r3, r4, r5, r6, r7, r8), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
 
@@ -14533,5 +15027,3 @@ open INV .
 	eq (chM(r3, r4, r5, r6, r7, r8, r9) \in nw(s)) = false .
 	red inv6(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv6(skeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12), a, b, kc, pk', k', sd1, sd2, h, n) .
 close
-
---> Time taken is 17536ms

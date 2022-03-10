@@ -3444,7 +3444,7 @@ open INV .
 	red inv14(s, kp) implies inv14(ckeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23), kp) .
 close
 
---> true, use inv42 as a lemma 
+--> true, use inv11 as a lemma 
 open INV .
 	op kp : -> PqKey .
 	op r1 : -> ClPriKeyEx .
@@ -3499,7 +3499,7 @@ open INV .
 	eq (priKey(intruder) \in' ltkLeaked(s)) = true .
 	eq time(kp) = time(s) .
 	eq (time(s) > timeLeak(priKey(intruder), ltkLeaked(s))) = false .
-	red inv42(s) implies inv14(s, kp) implies inv14(ckeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23), kp) .
+	red inv11(s) implies inv14(s, kp) implies inv14(ckeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23), kp) .
 close
 
 --> true 
@@ -3559,7 +3559,7 @@ open INV .
 	red inv14(s, kp) implies inv14(ckeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23), kp) .
 close
 
---> true, use inv41 as a lemma 
+--> true, use inv10 as a lemma 
 open INV .
 	op kp : -> PqKey .
 	op r1 : -> ClPriKeyEx .
@@ -3613,7 +3613,7 @@ open INV .
 	eq existCPqPriKexM(kp, nw(s)) = false .
 	eq (priKey(intruder) \in' ltkLeaked(s)) = false .
 	eq time(kp) = time(s) .
-	red inv41(s) implies inv14(s, kp) implies inv14(ckeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23), kp) .
+	red inv10(s) implies inv14(s, kp) implies inv14(ckeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23), kp) .
 close
 
 --> true 
@@ -16143,7 +16143,7 @@ open INV .
 	red inv14(s, kp) implies inv14(fkCkeyex(s, r1, r2, r3, r4), kp) .
 close
 
---> true, use inv42 as a lemma 
+--> true, use inv11 as a lemma 
 open INV .
 	op kp : -> PqKey .
 	op r1 : -> Prin .
@@ -16162,7 +16162,7 @@ open INV .
 	eq (priKey(intruder) \in' ltkLeaked(s)) = true .
 	eq time(kp) = time(s) .
 	eq (time(s) > timeLeak(priKey(intruder), ltkLeaked(s))) = false .
-	red inv42(s) implies inv14(s, kp) implies inv14(fkCkeyex(s, r1, r2, r3, r4), kp) .
+	red inv11(s) implies inv14(s, kp) implies inv14(fkCkeyex(s, r1, r2, r3, r4), kp) .
 close
 
 --> true 
@@ -16186,7 +16186,7 @@ open INV .
 	red inv14(s, kp) implies inv14(fkCkeyex(s, r1, r2, r3, r4), kp) .
 close
 
---> true, use inv41 as a lemma 
+--> true, use inv10 as a lemma 
 open INV .
 	op kp : -> PqKey .
 	op r1 : -> Prin .
@@ -16204,7 +16204,7 @@ open INV .
 	eq (priPqKey(r4) \in pqkLeaked(s)) = false .
 	eq (priKey(intruder) \in' ltkLeaked(s)) = false .
 	eq time(kp) = time(s) .
-	red inv41(s) implies inv14(s, kp) implies inv14(fkCkeyex(s, r1, r2, r3, r4), kp) .
+	red inv10(s) implies inv14(s, kp) implies inv14(fkCkeyex(s, r1, r2, r3, r4), kp) .
 close
 
 --> true 
@@ -30081,5 +30081,3 @@ open INV .
 	eq (chM(r3, r4, r5, r6, r7, r8, r9) \in nw(s)) = false .
 	red inv14(s, kp) implies inv14(skeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12), kp) .
 close
-
---> Time taken is 55147ms

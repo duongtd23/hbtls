@@ -33250,5 +33250,3 @@ open INV .
 	eq (chM(r3, r4, r5, r6, r7, r8, r9) \in nw(s)) = false .
 	red inv17(s, a, b, k, kp, n) implies inv17(skeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12), a, b, k, kp, n) .
 close
-
---> Time taken is 85232ms

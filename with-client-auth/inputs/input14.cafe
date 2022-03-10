@@ -1,0 +1,16 @@
+load hb-tls12-ca.cafe .
+
+ipsgopen INV .
+  inv inv10(S:Sys) .
+  inv inv11(S:Sys) .
+  inv inv14(S:Sys, KP:PqKey) .
+  inv inv17(S:Sys,A:Prin,B:Prin,K:ClPriKeyEx,KP:PqKey,N:Nat) .
+  generate inv14(S:Sys, KP:PqKey) induction on S:Sys .
+close
+
+set-output gen14.cafe .
+:save-proof .
+
+eof
+
+load input14.cafe .

@@ -385,7 +385,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -432,7 +432,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -640,7 +640,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -688,7 +688,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -1358,7 +1358,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -1406,7 +1406,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -1618,7 +1618,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -1667,7 +1667,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -2392,7 +2392,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -2441,7 +2441,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -2657,7 +2657,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -2707,7 +2707,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -3405,7 +3405,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -3455,7 +3455,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -3675,7 +3675,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -3726,7 +3726,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -4465,7 +4465,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -4514,7 +4514,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -4730,7 +4730,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -4780,7 +4780,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -5520,7 +5520,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -5570,7 +5570,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -5790,7 +5790,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -5841,7 +5841,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -6596,7 +6596,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -6647,7 +6647,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -6871,7 +6871,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -6923,7 +6923,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -7720,7 +7720,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -7770,7 +7770,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -7990,7 +7990,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -8041,7 +8041,7 @@ open INV .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existCPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = false .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishb(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -8792,7 +8792,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -8840,7 +8840,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -9165,7 +9165,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -9214,7 +9214,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -10187,7 +10187,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -10236,7 +10236,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -10567,7 +10567,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -10617,7 +10617,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -11652,7 +11652,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -11702,7 +11702,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -12039,7 +12039,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -12090,7 +12090,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -13101,7 +13101,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -13152,7 +13152,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -13495,7 +13495,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -13547,7 +13547,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -14610,7 +14610,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -14660,7 +14660,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -14997,7 +14997,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -15048,7 +15048,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -16103,7 +16103,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -16154,7 +16154,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -16497,7 +16497,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -16549,7 +16549,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -17624,7 +17624,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -17676,7 +17676,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -18025,7 +18025,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -18078,7 +18078,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -19206,7 +19206,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -19257,7 +19257,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -19600,7 +19600,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -19652,7 +19652,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -20838,7 +20838,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -20888,7 +20888,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -21225,7 +21225,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -21276,7 +21276,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -22287,7 +22287,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -22338,7 +22338,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -22681,7 +22681,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -22733,7 +22733,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -23808,7 +23808,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -23860,7 +23860,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -24209,7 +24209,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -24262,7 +24262,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -25311,7 +25311,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -25364,7 +25364,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -25719,7 +25719,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -25773,7 +25773,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -26876,7 +26876,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -26928,7 +26928,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -27277,7 +27277,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -27330,7 +27330,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -28425,7 +28425,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -28478,7 +28478,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -28833,7 +28833,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -28887,7 +28887,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -30002,7 +30002,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -30056,7 +30056,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -30417,7 +30417,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -30472,7 +30472,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -31642,7 +31642,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -31695,7 +31695,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -32050,7 +32050,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -32104,7 +32104,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -33247,7 +33247,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -33298,7 +33298,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -33641,7 +33641,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -33693,7 +33693,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -34723,7 +34723,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -34775,7 +34775,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -35124,7 +35124,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -35177,7 +35177,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -36272,7 +36272,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -36325,7 +36325,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -36680,7 +36680,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -36734,7 +36734,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -37802,7 +37802,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -37856,7 +37856,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -38217,7 +38217,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -38272,7 +38272,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -39395,7 +39395,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -39448,7 +39448,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -39803,7 +39803,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -39857,7 +39857,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -40972,7 +40972,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -41026,7 +41026,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -41387,7 +41387,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -41442,7 +41442,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -42577,7 +42577,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -42632,7 +42632,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -42999,7 +42999,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -43055,7 +43055,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -44246,7 +44246,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -44300,7 +44300,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -44661,7 +44661,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -44716,7 +44716,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -45923,7 +45923,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -45975,7 +45975,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -46324,7 +46324,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -46377,7 +46377,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -47426,7 +47426,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -47479,7 +47479,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -47834,7 +47834,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -47888,7 +47888,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -49003,7 +49003,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -49057,7 +49057,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -49418,7 +49418,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -49473,7 +49473,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -50560,7 +50560,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -50615,7 +50615,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -50982,7 +50982,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -51038,7 +51038,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -52181,7 +52181,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -52235,7 +52235,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -52596,7 +52596,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -52651,7 +52651,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -53786,7 +53786,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -53841,7 +53841,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -54208,7 +54208,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -54264,7 +54264,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -55419,7 +55419,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -55475,7 +55475,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -55848,7 +55848,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -55905,7 +55905,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -57117,7 +57117,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -57172,7 +57172,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -57539,7 +57539,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -57595,7 +57595,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -58780,7 +58780,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -58833,7 +58833,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -59188,7 +59188,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -59242,7 +59242,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -60310,7 +60310,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -60364,7 +60364,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -60725,7 +60725,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -60780,7 +60780,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -61915,7 +61915,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -61970,7 +61970,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -62337,7 +62337,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -62393,7 +62393,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -63499,7 +63499,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -63555,7 +63555,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -63928,7 +63928,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -63985,7 +63985,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -65148,7 +65148,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -65203,7 +65203,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -65570,7 +65570,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -65626,7 +65626,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -66781,7 +66781,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -66837,7 +66837,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -67210,7 +67210,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -67267,7 +67267,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -68442,7 +68442,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -68499,7 +68499,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -68878,7 +68878,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -68936,7 +68936,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -70169,7 +70169,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -70225,7 +70225,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -70598,7 +70598,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -70655,7 +70655,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -71894,7 +71894,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -71946,7 +71946,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -72295,7 +72295,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -72348,7 +72348,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -73397,7 +73397,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -73450,7 +73450,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -73805,7 +73805,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -73859,7 +73859,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -74974,7 +74974,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -75028,7 +75028,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -75389,7 +75389,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -75444,7 +75444,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -76531,7 +76531,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -76586,7 +76586,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -76953,7 +76953,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -77009,7 +77009,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -78152,7 +78152,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -78206,7 +78206,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -78567,7 +78567,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -78622,7 +78622,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -79757,7 +79757,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -79812,7 +79812,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -80179,7 +80179,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -80235,7 +80235,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -81390,7 +81390,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -81446,7 +81446,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -81819,7 +81819,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -81876,7 +81876,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -83088,7 +83088,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -83143,7 +83143,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -83510,7 +83510,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -83566,7 +83566,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -84795,7 +84795,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -84848,7 +84848,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -85203,7 +85203,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -85257,7 +85257,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -86325,7 +86325,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -86379,7 +86379,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -86740,7 +86740,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -86795,7 +86795,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -87930,7 +87930,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -87985,7 +87985,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -88352,7 +88352,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -88408,7 +88408,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -89514,7 +89514,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -89570,7 +89570,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -89943,7 +89943,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -90000,7 +90000,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -91163,7 +91163,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -91218,7 +91218,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -91585,7 +91585,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -91641,7 +91641,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -92796,7 +92796,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -92852,7 +92852,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -93225,7 +93225,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -93282,7 +93282,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -94457,7 +94457,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -94514,7 +94514,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -94893,7 +94893,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -94951,7 +94951,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -96184,7 +96184,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -96240,7 +96240,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -96613,7 +96613,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -96670,7 +96670,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -97921,7 +97921,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -97975,7 +97975,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -98336,7 +98336,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -98391,7 +98391,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -99478,7 +99478,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -99533,7 +99533,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -99900,7 +99900,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -99956,7 +99956,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -101111,7 +101111,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -101167,7 +101167,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -101540,7 +101540,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -101597,7 +101597,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -102722,7 +102722,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -102779,7 +102779,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -103158,7 +103158,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -103216,7 +103216,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -104399,7 +104399,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -104455,7 +104455,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -104828,7 +104828,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -104885,7 +104885,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -106060,7 +106060,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -106117,7 +106117,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -106496,7 +106496,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -106554,7 +106554,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -107749,7 +107749,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -107807,7 +107807,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -108192,7 +108192,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -108251,7 +108251,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -109505,7 +109505,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -109562,7 +109562,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -109941,7 +109941,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -109999,7 +109999,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -111305,7 +111305,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -111358,7 +111358,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -111713,7 +111713,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -111767,7 +111767,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -112835,7 +112835,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -112889,7 +112889,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -113250,7 +113250,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -113305,7 +113305,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -114440,7 +114440,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -114495,7 +114495,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -114862,7 +114862,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -114918,7 +114918,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -116024,7 +116024,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -116080,7 +116080,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -116453,7 +116453,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -116510,7 +116510,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -117673,7 +117673,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -117728,7 +117728,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -118095,7 +118095,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -118151,7 +118151,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -119306,7 +119306,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -119362,7 +119362,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -119735,7 +119735,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -119792,7 +119792,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -120967,7 +120967,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -121024,7 +121024,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -121403,7 +121403,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -121461,7 +121461,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -122694,7 +122694,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -122750,7 +122750,7 @@ open INV .
 	eq (k' \in pqkLeaked(s)) = false .
 	eq existClPriKexM(kc, nw(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -123123,7 +123123,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> true, use inv23 as a lemma 
+--> true, use inv15 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -123180,7 +123180,7 @@ open INV .
 	eq existClPriKexM(kc, nw(s)) = false .
 	eq (clKeyPri(kc) \in clkLeaked(s)) = true .
 	eq existSPqPriKexM(pqKey(pk', k', r6, r7, n), nw(s)) = true .
-	red inv23(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv15(s, pqKey(pk', k', r6, r7, n)) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true, use inv3 as a lemma 
@@ -124219,5 +124219,3 @@ open INV .
 	eq (r3 \in csign(nw(s))) = false .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinishc(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
-
---> Time taken is 230628ms

@@ -10298,7 +10298,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinisha(s, r1, r2, r3), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> false 
+--> true, use inv20 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -10327,8 +10327,7 @@ open INV .
 	eq (n > timeLeak(priKey(r1), ltkLeaked(s))) = false .
 	eq (cfM(intruder, r1, r2, encFin(prf-ckey(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), sd2), prf-cfin(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), h))) \in nw(s)) = false .
 	eq (cfM(r1, r1, r2, encFin(prf-ckey(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), sd2), prf-cfin(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), h))) \in nw(s)) = false .
-	red inv20(s, a, b, kc, pk', k', sd1, sd2, h, n) 
-  implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinisha(s, r1, r2, r3), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv20(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinisha(s, r1, r2, r3), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -10392,7 +10391,7 @@ open INV .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinisha(s, r1, r2, r3), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
---> false 
+--> true, use inv20 as a lemma 
 open INV .
 	op a : -> Prin .
 	op a1 : -> Prin .
@@ -10420,8 +10419,7 @@ open INV .
 	eq (priKey(r1) \in' ltkLeaked(s)) = false .
 	eq (cfM(intruder, r1, r2, encFin(prf-ckey(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), sd2), prf-cfin(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), h))) \in nw(s)) = false .
 	eq (cfM(r1, r1, r2, encFin(prf-ckey(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), sd2), prf-cfin(prf-ms(pms(kc, pqKey(pk', k', r1, r2, n)), sd1), h))) \in nw(s)) = false .
-	red inv20(s, a, b, kc, pk', k', sd1, sd2, h, n) 
-  implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinisha(s, r1, r2, r3), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
+	red inv20(s, a, b, kc, pk', k', sd1, sd2, h, n) implies inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(fkCfinisha(s, r1, r2, r3), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
 
 --> true 
@@ -28401,5 +28399,3 @@ open INV .
 	eq (chM(r3, r4, r5, r6, r7, r8, r9) \in nw(s)) = false .
 	red inv19(s, a, b, a1, kc, pk', k', sd1, sd2, h, n) implies inv19(skeyex(s, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12), a, b, a1, kc, pk', k', sd1, sd2, h, n) .
 close
-
---> Time taken is 68127ms
