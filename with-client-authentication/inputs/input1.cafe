@@ -1,0 +1,22 @@
+-- load hbtls-ca.cafe .
+
+ipsgopen INV .
+  inv inv12(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,SD1:Seed,SD2:Seed,H:Hash,N:Nat) .
+  inv inv3(S:Sys,A:Prin,B:Prin,A1:Prin,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,SD1:Seed,SD2:Seed,H:Hash,N:Nat) .
+  inv inv7(S:Sys,A:Prin,B:Prin,PK:ClPubKeyEx,PK':PqPubKeyEn,K':PqPriKeyEn,N:Nat,N2:Nat) .
+  inv inv18(S:Sys,A:Prin,B:Prin,B1:Prin,PK:ClPubKeyEx,PK':PqPubKeyEn,
+    PK2':PqPubKeyEn,CI:Cipher,N:Nat,N2:Nat) .
+  generate inv1(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,SD1:Seed,SD2:Seed,H:Hash,N:Nat)
+  induction on S:Sys .
+close
+
+set-output gen1.cafe .
+:save-proof .
+
+eof
+
+load input1.cafe .
+load invariants.cafe .

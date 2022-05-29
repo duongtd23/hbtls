@@ -1,0 +1,24 @@
+ipsgopen INV .
+  inv inv5(S:Sys,K:ClPriKeyEx) .
+  inv inv6(S:Sys,K':PqPriKeyEn) .
+  inv inv4(S:Sys,KC:ClassicKey) .
+  inv inv9(S:Sys, M:Msg) .
+  inv inv8(S:Sys,PK':PqPubKeyEn,K':PqPriKeyEn,N:Nat) .
+  inv inv7(S:Sys,A:Prin,B:Prin,PK:ClPubKeyEx,PK':PqPubKeyEn,K':PqPriKeyEn,N:Nat,N2:Nat) .
+  inv inv28(S:Sys,A:Prin,B:Prin,PK:ClPubKeyEx,PK':PqPubKeyEn,
+    K':PqPriKeyEn,CI:Cipher,N:Nat,N2:Nat) .
+  generate inv26b(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK:ClPubKeyEx,PK':PqPubKeyEn,
+    K':PqPriKeyEn,SD1:Seed,SD2:Seed,H:Hash,CI:Cipher,N:Nat,N2:Nat)
+  induction on S:Sys .
+close
+
+set-output gen26b.cafe .
+:save-proof .
+
+eof
+
+load input26b.cafe .
+
+load hbtls-ca.cafe .
+
+load invariants.cafe .

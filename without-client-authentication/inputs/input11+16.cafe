@@ -1,0 +1,21 @@
+-- load hbtls-wtca.cafe .
+
+ipsgopen INV .
+  inv inv9(S:Sys, M:Msg) .
+  inv inv4(S:Sys,KC:ClassicKey) .
+  inv inv5(S:Sys,K:ClPriKeyEx) .
+  inv inv8(S:Sys,PK':PqPubKeyEn,K':PqPriKeyEn,N:Nat) .
+  generate inv11(S:Sys,KC:ClassicKey,PK':PqPubKeyEn,K':PqPriKeyEn,
+    SD1:Seed,SD2:Seed,H:Hash,N:Nat)
+  induction on S:Sys .
+  generate inv16(S:Sys,KC:ClassicKey,PK':PqPubKeyEn,K':PqPriKeyEn,
+    SD1:Seed,SD2:Seed,H:Hash,N:Nat)
+  induction on S:Sys .
+close
+
+set-output gen11+16.cafe .
+:save-proof .
+
+eof
+
+load input11+16.cafe .

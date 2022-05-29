@@ -1,0 +1,17 @@
+-- load hbtls-ca.cafe .
+
+ipsgopen INV .
+  inv inv17(S:Sys, M:Msg, M2:Msg) .
+  inv inv23(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,I:Sid,SD:Seed,N:Nat) .
+  generate inv24(S:Sys,A:Prin,B:Prin,A2:Prin,B2:Prin,KC:ClassicKey,PK:ClPubKeyEx,
+    PK':PqPubKeyEn,K':PqPriKeyEn,I:Sid,SD:Seed,N:Nat,N2:Nat)
+  induction on S:Sys .
+close
+
+set-output gen24.cafe .
+:save-proof .
+
+eof
+
+load input24.cafe .

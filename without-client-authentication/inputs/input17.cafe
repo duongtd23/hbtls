@@ -1,0 +1,13 @@
+-- load hbtls-wtca.cafe .
+
+ipsgopen INV .
+  inv inv9(S:Sys,M:Msg) .
+  generate inv17(S:Sys,M:Msg,M2:Msg) induction on S:Sys .
+close
+
+set-output gen17.cafe .
+:save-proof .
+
+eof
+
+load input17.cafe .

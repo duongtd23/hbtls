@@ -1,0 +1,17 @@
+
+ipsgopen INV .
+  inv inv9(S:Sys, M:Msg) .
+  generate inv28(S:Sys,A:Prin,B:Prin,PK:ClPubKeyEx,PK':PqPubKeyEn,
+    K':PqPriKeyEn,CI:Cipher,N:Nat,N2:Nat)
+  induction on S:Sys .
+close
+
+set-output gen28.cafe .
+:save-proof .
+
+eof
+
+load input28.cafe .
+
+load hbtls-ca.cafe .
+load invariants.cafe .

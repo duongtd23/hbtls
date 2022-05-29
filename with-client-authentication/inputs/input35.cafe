@@ -1,0 +1,21 @@
+
+ipsgopen INV .
+  inv inv4(S:Sys, KC:ClassicKey) .
+  inv inv5(S:Sys, K:ClPriKeyEx) .
+  inv inv8(S:Sys,PK':PqPubKeyEn,K':PqPriKeyEn,N:Nat) .
+  inv inv23(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,I:Sid,SD:Seed,N:Nat) .
+  generate inv35(S:Sys,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,SD1:Seed,SD2:Seed,H:Hash,N:Nat)
+  induction on S:Sys .
+close
+
+set-output gen35.cafe .
+:save-proof .
+
+eof
+
+load input35.cafe .
+
+load hbtls-ca.cafe .
+load invariants.cafe .

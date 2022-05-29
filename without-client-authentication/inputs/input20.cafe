@@ -1,0 +1,20 @@
+-- load hbtls-wtca.cafe .
+
+ipsgopen INV .
+  inv inv7(S:Sys,A:Prin,B:Prin,PK:ClPubKeyEx,PK':PqPubKeyEn,
+    K':PqPriKeyEn,N:Nat,N2:Nat) .
+  inv inv22(S:Sys,KC:ClassicKey,PK':PqPubKeyEn,K':PqPriKeyEn,
+    SD1:Seed,SD2:Seed,H:Hash,N:Nat) .
+  inv inv24(S:Sys,A:Prin,B:Prin,A2:Prin,B2:Prin,KC:ClassicKey,PK:ClPubKeyEx,
+    PK':PqPubKeyEn,K':PqPriKeyEn,I:Sid,SD:Seed,N:Nat,N2:Nat) .
+  generate inv20(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK:ClPubKeyEx,PK':PqPubKeyEn,
+    K':PqPriKeyEn,SD1:Seed,SD2:Seed,H:Hash,N:Nat,N2:Nat)
+  induction on S:Sys .
+close
+
+set-output gen20.cafe .
+:save-proof .
+
+eof
+
+load input20.cafe .

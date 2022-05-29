@@ -1,0 +1,10 @@
+ipsgopen INV .
+  inv inv9(S:Sys,M:Msg) .
+  generate inv37(S:Sys,M:Msg,M2:Msg) induction on S:Sys .
+close
+
+set-output gen37.cafe .
+:save-proof .
+
+eof
+load input37.cafe .

@@ -1,0 +1,15 @@
+-- load hbtls-wtca.cafe .
+
+ipsgopen INV .
+  inv inv5(S:Sys,K:ClPriKeyEx) .
+  inv inv6(S:Sys,K':PqPriKeyEn) .
+  inv inv9(S:Sys, M:Msg) .
+  generate inv9(S:Sys, M:Msg) induction on S:Sys .
+close
+
+set-output gen9.cafe .
+:save-proof .
+
+eof
+
+load input9.cafe .

@@ -1,0 +1,15 @@
+-- load hbtls-wtca.cafe .
+
+ipsgopen INV .
+  inv inv9(S:Sys, M:Msg) .
+  generate inv23(S:Sys,A:Prin,B:Prin,KC:ClassicKey,PK':PqPubKeyEn,
+    K':PqPriKeyEn,I:Sid,SD:Seed,N:Nat)
+  induction on S:Sys .
+close
+
+set-output gen23.cafe .
+:save-proof .
+
+eof
+
+load input23.cafe .
